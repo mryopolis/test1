@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="ms.css">
+<script src="js/jquery-1.11.1.js"></script>
+
+
+
+<title>Insert title here</title>
+</head>
+<body>
+  <a href="#">test12</a>
+  
+  <div id="dv1">
+     fff2
+  </div>
+  
+  <ul>
+  <li><a href="http://jquery.com">jQuery</a></li>
+  <li><a href="http://sizzlejs.com">Sizzle</a></li>
+  <li><a href="http://blog.jquery.com">jQuery Blog</a></li>
+</ul>
+
+<script>
+	var links = $('li a');
+	links.each(function(i,a){
+		document.write(i+": " + a.innerHTML);
+		if (i == 1) return false; //stop
+	});
+	
+</script>
+ 
+</body>
+</html>
